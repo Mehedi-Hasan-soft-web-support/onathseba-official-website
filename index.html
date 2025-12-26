@@ -1,4 +1,6 @@
- 
+
+
+
 <!DOCTYPE html>
 <html lang="bn">
 <head>
@@ -793,32 +795,50 @@
             </div>
 
             <div class="grid-2">
-                <div class="card">
-                    <h3>📹 লাইভ ক্যামেরা ফিড</h3>
-                    <div class="live-feed">
-                        <span class="live-badge">🔴 LIVE</span>
-                        <div class="video-container">
-                            <div class="video-placeholder">
-                                <p style="font-size: 3rem;">📹</p>
-                                <p style="font-size: 1.2rem;">ESP32-CAM Live Feed</p>
-                                <p style="font-size: 0.9rem; margin-top: 1rem;">VM-DHK-01 - মতিঝিল, ঢাকা</p>
-                                <p style="font-size: 0.8rem; opacity: 0.7;">23 Dec 2025, 3:57 PM</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div style="margin-top: 1rem; display: flex; gap: 1rem;">
-                        <button class="btn btn-primary" style="flex: 1;">🎤 মাইক চালু করুন</button>
-                        <button class="btn btn-danger" style="flex: 1;">⏺️ রেকর্ড করুন</button>
-                    </div>
-                </div>
+<div class="card">
+    <h3>📹 লাইভ ক্যামেরা ফিড</h3>
+    <div class="live-feed" style="padding: 1rem; background: #000; border-radius: 10px; text-align: center;">
+        <span class="live-badge" style="display:inline-block; background:#dc2626; color:#fff; padding:0.5rem 1rem; border-radius:20px; margin-bottom:1rem; animation:pulse 2s infinite;">🔴 LIVE</span>
+        
+        <div style="position: relative; width: 100%; max-width: 400px; aspect-ratio: 16/9; margin: 0 auto; border-radius: 10px; overflow: hidden; background: #000;">
+            <img src="http://192.168.0.118/stream" 
+                 alt="ESP32-CAM Live Feed" 
+                 style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        </div>
+
+        <div style="margin-top: 1rem; display: flex; gap: 1rem; justify-content: center;">
+            <button class="btn btn-primary" style="flex: 1;">🎤 মাইক চালু করুন</button>
+            <button class="btn btn-danger" style="flex: 1;">⏺️ রেকর্ড করুন</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+
 
                 <div class="card">
                     <h3>📍 মেশিন লোকেশন</h3>
                     <div style="background: #e2e8f0; padding: 1.5rem; border-radius: 8px; margin-bottom: 1rem;">
                         <p><strong>মেশিন ID:</strong> VM-DHK-01</p>
-                        <p><strong>ঠিকানা:</strong> মতিঝিল সি/এ, ঢাকা</p>
+                        <p><strong>ঠিকানা:</strong> IUBAT, Dhaka</p>
                         <p><strong>স্থানাঙ্ক:</strong> 23.7337° N, 90.4181° E</p>
-                        <p><strong>নিকটতম থানা:</strong> মতিঝিল থানা (0.8 km)</p>
+                        <p><strong>নিকটতম থানা:</strong> Kamarpara(0.8 km)</p>
                     </div>
                     
                     <h4>ইন্সিডেন্ট রিপোর্ট</h4>
@@ -1001,7 +1021,4 @@
         };
     </script>
 </body>
- 
-
-
- 
+</html>
