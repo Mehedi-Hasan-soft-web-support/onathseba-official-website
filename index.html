@@ -154,7 +154,7 @@
             </div>
 
             <div class="card">
-                <h3>Real-time কর্মচারী মিল ট্র্যাকিং</h3>
+                <h3>Real-time শিশু মিল ট্র্যাকিং</h3>
                 <div id="employeeTracking"><div class="loading">ডেটা লোড হচ্ছে...</div></div>
             </div>
         </div>
@@ -506,7 +506,7 @@
             document.getElementById('emergencyHandled').textContent=emerg;
 
             // Today eaten list
-            let eaten='<div class="alert alert-success"><strong>'+0+'</strong> জন কর্মচারী আজ খাবার পেয়েছে</div>';
+            let eaten='<div class="alert alert-success"><strong>'+0+'</strong> জন শিশু আজ খাবার পেয়েছে</div>';
             let eatenList='<div class="table-container"><table><thead><tr><th>নাম</th><th>RFID</th><th>সময়</th><th>মিল কাউন্ট</th></tr></thead><tbody>';
             let eatenCount=0;
             const todayFeeds=feeds.filter(f=>f.created_at.startsWith(tod)&&f.field3==='SUCCESS');
@@ -523,11 +523,11 @@
                 }
             });
             eatenList+='</tbody></table></div>';
-            eaten='<div class="alert alert-success"><strong>'+eatenCount+'</strong> জন কর্মচারী আজ খাবার পেয়েছে</div>';
+            eaten='<div class="alert alert-success"><strong>'+eatenCount+'</strong> জন শিশু আজ খাবার পেয়েছে</div>';
             document.getElementById('eatenToday').innerHTML=eaten+(eatenCount>0?eatenList:'<p style="text-align:center;color:#666;padding:2rem;">আজ এখনো কেউ খাবার নেয়নি</p>');
 
             // Not eaten today
-            let notEaten='<div class="alert alert-warning" style="background:#fef3c7;color:#d97706;border-left:4px solid #f59e0b;"><strong>'+0+'</strong> জন কর্মচারী আজ এখনো খাবার পায়নি</div>';
+            let notEaten='<div class="alert alert-warning" style="background:#fef3c7;color:#d97706;border-left:4px solid #f59e0b;"><strong>'+0+'</strong> জন শিশু আজ এখনো খাবার পায়নি</div>';
             let notEatenList='<div class="table-container"><table><thead><tr><th>নাম</th><th>RFID</th><th>শেষ খাবার</th></tr></thead><tbody>';
             let notEatenCount=0;
             
@@ -540,7 +540,7 @@
                 }
             });
             notEatenList+='</tbody></table></div>';
-            notEaten='<div class="alert alert-warning" style="background:#fef3c7;color:#d97706;border-left:4px solid #f59e0b;"><strong>'+notEatenCount+'</strong> জন কর্মচারী আজ এখনো খাবার পায়নি</div>';
+            notEaten='<div class="alert alert-warning" style="background:#fef3c7;color:#d97706;border-left:4px solid #f59e0b;"><strong>'+notEatenCount+'</strong> জন শিশু আজ এখনো খাবার পায়নি</div>';
             document.getElementById('notEatenToday').innerHTML=notEaten+(notEatenCount>0?notEatenList:'<p style="text-align:center;color:#666;padding:2rem;">সবাই আজ খাবার পেয়েছে! 🎉</p>');
 
             // Employee tracking
